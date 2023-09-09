@@ -11,18 +11,7 @@ const HomePage = () => {
     });
   }, []);
 
-  return (
-    <div>
-      {countries.map((country, index) => (
-        <div key={index}>
-          <span>{country.name.official}</span>{" "}
-          {!!country.coatOfArms.png && (
-            <img src={country.coatOfArms.png} alt="coat of arms" width={100} />
-          )}
-        </div>
-      ))}
-    </div>
-  );
+  return <div>countries length: {countries.length}</div>;
 };
 
 export default HomePage;
